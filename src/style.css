@@ -1,0 +1,5 @@
+.wrapper {width: 80px;height:60px;display:inline-block;}
+.sub{width:50%;height:100%;float:left;border:1px solid transparent;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;opacity: 0.4;}
+.clear{background:yellow url("wea_c_01.png") no-repeat scroll center;}
+.rainy{background:#c1c1c1 url("wea_c_04.png") no-repeat scroll center;}
+.sub[data-selected=true]{border:1px solid #5f5f5f;opacity: 1;}
