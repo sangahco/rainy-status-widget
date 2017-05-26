@@ -16,11 +16,11 @@
         }
 
         componentDidMount() {
-            console.log(this);
+            //console.log(this);
         }
 
         componentWillUnmount() {
-            console.log(this);
+            //console.log(this);
         }
 
         handleClearClick(e){
@@ -65,6 +65,6 @@
     }
 
     const element = <RainyWidget />;
-    ReactDOM.render(element, document.getElementById("root"));
+    ReactDOM.render(element, document.getElementById("rainy-widget"));
     
 })();
