@@ -27,11 +27,11 @@ module.exports = function (grunt) {
         compress: {
             main: {
                 options: {
-                    archive: 'dist/sysconf-v<%= pkg.version %>.tar.gz',
+                    archive: 'dist/<%= pkg.name %>-v<%= pkg.version %>.tar.gz',
                     mode: 'tgz'
                 },
                 files: [
-                    {expand: true, cwd: 'build/', src: ['**'], dest: 'sysconf-v<%= pkg.version %>'}
+                    {expand: true, cwd: 'build/', src: ['**'], dest: '<%= pkg.name %>-v<%= pkg.version %>'}
                 ]
             }
         },

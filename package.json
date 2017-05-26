@@ -1,18 +1,18 @@
 {
-  "name": "system-config",
+  "name": "rainy-status-widget",
   "version": "1.0.1",
-  "description": "System Configuration",
+  "description": "Select weather status into form input ready to be submitted.",
   "private": true,
   "keywords": [
-    "system",
-    "configuration",
-    "properties"
+    "weather",
+    "rainy",
+    "widget"
   ],
   "author": "Emanuele Disco",
   "license": "ISC",
   "scripts": {
     "publish": "grunt build",
-    "build": "babel src -d lib && grunt build",
+    "build": "grunt build && babel src -d build",
     "start": "node server.js"
   },
   "dependencies": {
