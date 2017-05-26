@@ -12,7 +12,7 @@
   "license": "ISC",
   "scripts": {
     "publish": "grunt build",
-    "build": "grunt build && babel src -d build",
+    "build": "grunt build && babel src -d build && browserify build/rainy-widget.js -o build/rainy-widget-bundle.js",
     "start": "node server.js"
   },
   "dependencies": {
@@ -28,9 +28,8 @@
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-compress": "^1.4.1",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-uglify": "~0.5.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "browserify": "latest"
   },
   "babel": {
     "presets": [

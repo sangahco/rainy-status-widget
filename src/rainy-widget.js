@@ -1,5 +1,11 @@
+// https://codeutopia.net/blog/2016/01/25/getting-started-with-npm-and-browserify-in-a-react-project/
+// http://browserify.org/
+// https://facebook.github.io/react/docs/installation.html
 (function(){
     "use strict";
+
+    var ReactDOM = require('react-dom');
+    var React = require('react');
 
     class RainyStatus extends React.Component {
         constructor(props) {
@@ -47,24 +53,32 @@
         render () {
             return (
                 <div>
-                    <RainyStatus name="status1" label="7am" />
-                    <RainyStatus name="status2" label="8am" />
-                    <RainyStatus name="status3" label="9am" />
-                    <RainyStatus name="status4" label="10am" />
-                    <RainyStatus name="status5" label="11am" />
-                    <RainyStatus name="status6" label="12noon" />
-                    <RainyStatus name="status7" label="1pm" />
-                    <RainyStatus name="status8" label="2pm" />
-                    <RainyStatus name="status9" label="3pm" />
-                    <RainyStatus name="status10" label="4pm" />
-                    <RainyStatus name="status11" label="5pm" />
-                    <RainyStatus name="status12" label="6pm" />
+                    <RainyStatus name="status7" label="7am" />
+                    <RainyStatus name="status8" label="8am" />
+                    <RainyStatus name="status9" label="9am" />
+                    <RainyStatus name="status10" label="10am" />
+                    <RainyStatus name="status11" label="11am" />
+                    <RainyStatus name="status12" label="12noon" />
+                    <RainyStatus name="status13" label="1pm" />
+                    <RainyStatus name="status14" label="2pm" />
+                    <RainyStatus name="status15" label="3pm" />
+                    <RainyStatus name="status16" label="4pm" />
+                    <RainyStatus name="status17" label="5pm" />
+                    <RainyStatus name="status18" label="6pm" />
+                    <RainyStatus name="status19" label="7pm" />
+                    <RainyStatus name="status20" label="8pm" />
+                    <RainyStatus name="status21" label="9pm" />
+                    <RainyStatus name="status22" label="10pm" />
+                    <RainyStatus name="status23" label="11pm" />
+                    <RainyStatus name="status24" label="12pm" />
                 </div>
             );
         }
     }
 
-    const element = <RainyWidget />;
-    ReactDOM.render(element, document.getElementById("rainy-widget"));
+    if ( document.getElementById("rainy-widget") ) {
+        const element = <RainyWidget />;
+        ReactDOM.render(element, document.getElementById("rainy-widget"));
+    }
     
 })();
