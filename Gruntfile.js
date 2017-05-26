@@ -9,8 +9,7 @@ module.exports = function (grunt) {
             },
             build: {
                 files: { 
-                    'build/app.module.js': 'src/app.module.js',
-                    'build/props.module.js': 'src/props.module.js'
+                    'build/rainy-widget-bundle.min.js': 'build/rainy-widget-bundle.js'
                 }
             }
         },
@@ -18,8 +17,7 @@ module.exports = function (grunt) {
         copy: {
             main: {
                 files: [
-                    {expand: true, cwd: 'src/', src: ['**'], dest: 'build/'},
-                    {expand: true, cwd: 'lib/', src: ['**'], dest: 'build/'}
+                    {expand: true, cwd: 'src/', src: ['**', '!**/*.js'], dest: 'build/'}
                 ]
             }
         },
@@ -49,8 +47,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     // Default task(s).
-    grunt.registerTask('default', ['copy']);
-
-    grunt.registerTask('build', ['clean', 'copy', 'uglify', 'compress']);
+    //grunt.registerTask('default', ['copy']);
+    grunt.registerTask('publish', ['uglify', 'compress']);
 
 };

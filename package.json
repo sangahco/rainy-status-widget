@@ -11,9 +11,9 @@
   "author": "Emanuele Disco",
   "license": "ISC",
   "scripts": {
-    "publish": "grunt build",
-    "build": "grunt build && babel src -d build && browserify build/rainy-widget.js -o build/rainy-widget-bundle.js",
-    "start": "node server.js"
+    "publish": "grunt clean && babel src -d build && browserify build/rainy-widget.js -g [ envify --NODE_ENV production ] -p bundle-collapser/plugin -o build/rainy-widget-bundle.js && grunt copy && grunt publish",
+    "build": "babel src -d build && browserify build/rainy-widget.js -o build/rainy-widget-bundle.js && grunt copy",
+    "start": "http-server build"
   },
   "dependencies": {
     "react": "^15.5.4",
@@ -24,12 +24,15 @@
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.5.1",
     "babel-preset-react": "^6.24.1",
+    "browserify": "latest",
+    "bundle-collapser": "^1.2.1",
+    "envify": "^4.0.0",
     "grunt": "~0.4.5",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-compress": "^1.4.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-uglify": "~0.5.0",
-    "browserify": "latest"
+    "http-server": "latest"
   },
   "babel": {
     "presets": [

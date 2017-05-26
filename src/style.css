@@ -1,8 +1,8 @@
 .rainy-widget .wrapper {width: 75px;height:60px;display:inline-block;margin: 5px 5px;}
 .rainy-widget .wrapper,.wrapper * {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-.rainy-widget .sub{width:50%;height:42px;float:left;border:1px solid transparent;opacity: 0.3;}
+.rainy-widget .sub{width:50%;height:42px;float:left;border:1px solid transparent;opacity: 0.3;cursor: pointer;}
 .rainy-widget .sub.clear{background:yellow url("wea_c_01.png") no-repeat scroll center;}
 .rainy-widget .sub.rainy{background:#c1c1c1 url("wea_c_04.png") no-repeat scroll center;}
 .rainy-widget .sub[data-selected='true']{border:1px solid #5f5f5f;opacity: 1;}
-.rainy-widget .label{width: 100%;height:18px;clear: both;text-align: center;font-weight: 700;background-color: #ffd958;color:#222;border-top: 1px solid transparent;border-radius: 5px 5px 0 0;font-size:0.9em;}
+.rainy-widget .label{width: 100%;height:18px;clear: both;text-align: center;font-weight: 700;background-color: #ffd958;color:#222;border-top: 1px solid transparent;border-radius: 5px 5px 0 0;font-size:0.9em;line-height: 1.3;}
 .rainy-widget .label[data-weather='4']{background-color: #8c8c8c;color:#fff;}

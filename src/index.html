@@ -8,7 +8,7 @@
         </style>
     </head>
     <body>
-        <div class="rainy-widget" id="rainy-widget">
+        <div id="rainy-widget">
         <!-- This div's content will be managed by React. -->
         </div>
     </body>
@@ -18,6 +18,13 @@
 <script>
 (function(){
     "use strict";
+
+    window.RainyWidget.render('rainy-widget', { 
+        status8: '4',
+        status16: '4',
+        status20: '4',
+        status22: '4'
+    });
     
 })();
 </script>
