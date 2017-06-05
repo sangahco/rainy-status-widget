@@ -14,7 +14,7 @@ Before doing anything else make sure you have these applications:
 ## 1. Get this source
 
 ```
-$ git clone https://github.com/sangahco/pmis-system-config.git
+$ git clone https://github.com/sangahco/rainy-status-widget.git
 ```
 
 ## 2. Fetch Dependencies
