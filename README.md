@@ -1,4 +1,4 @@
-# PMIS System Configuration
+# Rainy Status Widget
 
 Before doing anything else make sure you have these applications:
 
